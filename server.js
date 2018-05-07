@@ -33,3 +33,55 @@ app.get('/moreobjectslesssize', function(req, res) {
 app.get('/moreobjectsmoresize', function(req, res) {
     res.sendfile('./moreobjectsmoresize.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
+
+app.get('/objects1', function(req, res) {
+    res.sendfile('./objects1.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/objects2', function(req, res) {
+    res.sendfile('./objects2.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/objects5', function(req, res) {
+    res.sendfile('./objects5.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/objects10', function(req, res) {
+    res.sendfile('./objects10.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/objects50', function(req, res) {
+    res.sendfile('./objects50.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/5KB', function(req, res) {
+    res.sendfile('./5KB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/10KB', function(req, res) {
+    res.sendfile('./10KB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/100KB', function(req, res) {
+    res.sendfile('./100KB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/200KB', function(req, res) {
+    res.sendfile('./200KB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/500KB', function(req, res) {
+    res.sendfile('./500KB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/1MB', function(req, res) {
+    res.sendfile('./1MB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/10MB', function(req, res) {
+    res.sendfile('./10MB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
+
+app.get('/20MB', function(req, res) {
+    res.sendfile('./20MB.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
