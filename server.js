@@ -29,3 +29,7 @@ app.get('/lessobjectslesssize', function(req, res) {
 app.get('/moreobjectslesssize', function(req, res) {
     res.sendfile('./moreobjectslesssize.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
+
+app.get('/moreobjectsmoresize', function(req, res) {
+    res.sendfile('./moreobjectsmoresize.html'); // load the single view file (angular will handle the page changes on the front-end)
+});
