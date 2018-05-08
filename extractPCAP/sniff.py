@@ -1,4 +1,5 @@
 import sys, pyshark
+import time
 
 
 def generate_pcap_files(interface, timeout, output_file):
@@ -12,10 +13,13 @@ def generate_pcap_files(interface, timeout, output_file):
 def run(interface, env):
     print('----------------------------------------')
 
-    for j in range(40):
-        timeout = 10 * (env+1) * (j%4+1 + 1)
-        filename = 'env_' + str(env) + '_setting_' + str(j) + '.pcap'
-        generate_pcap_files(interface, timeout, filename)
+    for j in range(1, 5):
+        for k in range(10):
+            print('--------------{}{}------------------------'.format(j, k))
+            timeout = 10 * (env+1) * (j + 1)
+            filename = 'env_' + str(k) + '_setting_' + str(env) + str(j) + '.pcap'
+            print('Timestamp ', time.time())
+            generate_pcap_files(interface, timeout, filename)
 
 
 if __name__ == "__main__":
