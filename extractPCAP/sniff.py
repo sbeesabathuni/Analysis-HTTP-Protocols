@@ -14,7 +14,7 @@ def run(interface, env):
     print('----------------------------------------')
 
     for j in range(1, 5):
-        for k in range(10):
+        for k in range(5):
             print('--------------{}{}------------------------'.format(j, k))
             timeout = 10 * (env+1) * (j + 1)
             filename = 'env_' + str(k) + '_setting_' + str(env) + str(j) + '.pcap'
