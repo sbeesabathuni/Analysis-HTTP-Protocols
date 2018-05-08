@@ -42,9 +42,9 @@ def run(hostname, server_port, chromedriver_path, env):
 
     print('----------------------------------------')
     for j in range(1, 5):
-        print('Web Setting: ', web_settings['env' + str(j)], '.........')
+        print('Web Setting: ', web_settings['env' + str(j)])
         for k in range(10):
-            print('--------------{}{}------------------------'.format(j, k))
+	    print('-----------------{}{}-------------------'.format(j, k))
             start = time.time()
             get_request(browser, hostname, server_port, web_settings['env' + str(j)])
             time_diff = time.time() - start
