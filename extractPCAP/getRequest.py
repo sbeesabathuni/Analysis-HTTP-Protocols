@@ -26,6 +26,7 @@ def get_request(driver, hostname, server_port, web_env):
     clear_cache(driver)
 
     url = 'http://' + hostname + ':' + server_port + '/' + web_env
+    print('Timestamp ', time.time())
     print('Get Request', web_env)
     driver.get(url)
     print('Request Finished')
@@ -43,10 +44,11 @@ def run(hostname, server_port, chromedriver_path, env):
     for j in range(1, 5):
         print('Web Setting: ', web_settings['env' + str(j)], '.........')
         for k in range(10):
+            print('--------------{}{}------------------------'.format(j, k))
             start = time.time()
             get_request(browser, hostname, server_port, web_settings['env' + str(j)])
             time_diff = time.time() - start
-            sleep_time = int(10 * (env+1) * (j + 1) - time_diff + 5) # extra 5 seconds
+            sleep_time = int(10 * (env+1) * (j + 1) - time_diff)
             time.sleep(sleep_time)
 
 
