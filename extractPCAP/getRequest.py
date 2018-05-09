@@ -28,7 +28,11 @@ def get_request(driver, hostname, server_port, web_env):
     url = 'http://' + hostname + ':' + server_port + '/' + web_env
     print('Timestamp ', time.time())
     print('Get Request', web_env)
+    plt_start = time.time()
     driver.get(url)
+    plt_end = time.time()
+    plt = plt_end - plt_start
+    print('PLT-------------------------------', plt)
     print('Request Finished')
 
 
@@ -44,7 +48,7 @@ def run(hostname, server_port, chromedriver_path, env):
     for j in range(1, 5):
         print('Web Setting: ', web_settings['env' + str(j)])
         for k in range(5):
-	    print('-----------------{}{}-------------------'.format(j, k))
+            print('-----------------{}{}-------------------'.format(j, k))
             start = time.time()
             get_request(browser, hostname, server_port, web_settings['env' + str(j)])
             time_diff = time.time() - start
