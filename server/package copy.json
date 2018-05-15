@@ -1,0 +1,13 @@
+{
+  "name": "news-app",
+  "version": "0.0.0",
+  "description": "News application.",
+  "main": "server.js",
+  "author": "Sravya",
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "express": "^4.7.4",
+    "local-web-server": "^2.5.2",
+    "quic": "~0.1.1"
+  }
+}
