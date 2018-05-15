@@ -52,7 +52,7 @@ def run(hostname, server_port, chromedriver_path, env):
             start = time.time()
             get_request(browser, hostname, server_port, web_settings['env' + str(j)])
             time_diff = time.time() - start
-            sleep_time = int(10 * (env+1) * (j + 1) - time_diff)
+            sleep_time = int(20 * (env+1) * (j + 1) - time_diff)
             time.sleep(sleep_time)
 
 

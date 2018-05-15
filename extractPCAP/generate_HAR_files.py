@@ -53,7 +53,7 @@ def run(host_url, chromedriver_path, env):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
+    if len(sys.argv) < 3:
         print('Incorrect command')
         sys.exit(1)
 
