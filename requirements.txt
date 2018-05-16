@@ -1,3 +1,1 @@
-pyshark
-multiprocessing
 selenium

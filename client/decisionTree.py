@@ -1,5 +1,4 @@
 from sklearn import tree
-from sklearn.datasets import load_iris
 import graphviz
 
 data_input = []
