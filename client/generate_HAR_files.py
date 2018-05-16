@@ -47,7 +47,7 @@ def run(host_url, chromedriver_path, env):
     print('----------------------------------------')
     for j in range(1, 5):
         print('Web Setting: ', web_settings['env' + str(j)])
-        for k in range(5):
+        for k in range(10):
             print('-----------------{}{}-------------------'.format(env, j, k))
             get_request(browser, host_url, web_settings['env' + str(j)])
 
