@@ -1,3 +1,13 @@
+Start Your Local Servers:
+=========================
+HTTP/1.1
+$node server.js
+HTTP/2 :
+a) $ws --htp2
+b) $node --expose-http2 server2.js
+SPDY:
+$node app.js
+
 1. Download chromedriver and note path to chromedriver
 2. Install all the python requirements. Command: sudo pip install -r requirements.txt
 3. Check network interface using ifconfig and note it.
